@@ -1,0 +1,114 @@
+/*Attributes*/
+html, body{
+	height:100%;
+	background-color: #e0e2e4;
+	font-family: Arial;
+}
+h2{
+  color: white;
+  text-shadow: 5px;
+}
+* {
+    box-sizing: border-box;
+}
+
+/*Classes*/
+.navbar{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top : 0;
+
+}
+.navbarlist{
+	    float: left;
+	    border-right: 1px solid #bbb;
+}
+.navbarlist a{
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbarlist a:hover {
+    background-color: #111;
+}
+.usermanagement{
+	float: right;
+		padding-bottom: 5px;
+}
+.usermanagement a {
+		color: #fff;
+	text-decoration: none;
+	margin-right: 15px;
+}
+.active {
+    background-color: #599857;
+}
+
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: #98BE97;
+}
+
+.leftcolumn {
+  background-color: #142A14; 
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  height: 100%;
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+  background-color: #142A14;  
+
+}
+
+.card {
+     background-color: #5D935C;
+     padding: 20px;
+     margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #142A14;
+  margin-top: 20px;
+}
+.imgcontainer{
+  width: 150px;
+}
+
+@media (max-width: 800px) {
+  .leftcolumn, .rightcolumn { 
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/*ID's*/
+#maincontent{
+  background-color: #A3B3A2;
+  color: white;
+  padding: 20px;
+  margin-top: 30px;
+  text-shadow: 5px;
+}
+#coffee{
+  width: 300px;
+}
