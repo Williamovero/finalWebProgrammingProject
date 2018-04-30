@@ -1,0 +1,123 @@
+/*Attributes*/
+html, body{
+	height:100%;
+	font-family: Arial;
+}
+
+h1,h2,h3,h4{
+  color: white;
+  text-shadow: 5px;
+}
+
+/*Classes*/
+.active {
+    background-color: #599857;
+}
+.colorPurpleNav{
+  background-color: #202369;
+  width: 100%;
+}
+
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: #98BE97;
+}
+
+.leftcolumn {
+  background-color: #142A14; 
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  height: 100%;
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+  background-color: #142A14;  
+
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #030362;
+  margin-top: 20px;
+  height: 400px;
+  color: white;
+}
+.paletteLight{
+  background-color: #585881;
+}
+.paletteDark{
+  background-color: #030362;
+}
+@media (max-width: 800px) {
+  .leftcolumn, .rightcolumn { 
+    width: 100%;
+    padding: 0;
+  }
+}
+.SignUp{
+ text-align: center;
+ margin: 100px 400px; 
+
+}
+.SignUpPage{
+  background-image: url(../images/blue-ocean-water-5412.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%; 
+}
+
+.switch-group {
+  list-style:none;
+  padding:0;
+  margin:0 0 40px 0;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  li a {
+    display:block;
+    text-decoration:none;
+    padding:15px;
+    background:rgba($gray-light,.25);
+    color:$gray-light;
+    font-size:20px;
+    float:left;
+    width:50%;
+    text-align:center;
+    cursor:pointer;
+    transition:.5s ease;
+    &:hover {
+      background:$main-dark;
+      color:$white;
+    }
+  }
+  .active a {
+    background:$main;
+    color:$white;
+  }
+}
+
+.switch-content > div:last-child {
+  display:none;
+}
+
+/*ID's*/
+#maincontent{
+  background-color: #A3B3A2;
+  color: white;
+  padding: 20px;
+  margin-top: 30px;
+  text-shadow: 5px;
+}
+#register{
+   background-color: #014983;
+ opacity: 0.8;
+ width: 100%;
+ padding: 50px 0px;
+}

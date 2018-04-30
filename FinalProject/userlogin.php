@@ -14,7 +14,7 @@ session_start();
 <body>
 <div>
 		<ul class="navbar">
-	  	<li class="navbarlist"><a href="project2_1.php" class="active">Home</a></li>
+	  	<li class="navbarlist"><a href="finalProject_1.php" class="active">Home</a></li>
 	  	<li class="navbarlist"><a href="createblog.php">Create Blog</a></li>
 	  	<div class="usermanagement">
       <li><a href="userlogin.php">Login</a></li>      

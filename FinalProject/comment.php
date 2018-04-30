@@ -7,9 +7,22 @@
 <html>
 <head>
       	<title>Comment</title>
-                <link rel="stylesheet" type="text/css" href="project2.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
 
+        <!-- Responsive Layout -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+            <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="finalProject.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+       
+               <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
+
+            <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 </head>
 <body>
 <div>
@@ -55,19 +68,46 @@
                 <td><input type="submit" name="submit" value="submit" /></td>
             </tr>
         </table>
-<div class="footer">
-  <h2>Join our blog</h2>
-           <div class="footer-social">
-             <a href="https://www.facebook.com/GeorgiaStateUniversity"  target="_blank"><span class="footer-facebook">F</span></a>
-             <a href="https://twitter.com/georgiastateu" target="_blank"><span class="footer-twitter">T</span></a>
-             <a href="https://www.linkedin.com/edu/georgia-state-university-18163" target="_blank"><span class="footer-linkedin">L</span></a>
-             <a href="http://instagram.com/georgiastateuniversity" target="_blank"><span class="footer-instagram">I</span></a>
-             <a href="https://www.flickr.com/photos/georgiastate" target="_blank"><span class="footer-flickr">fl</span></a>
-             <a href="https://www.youtube.com/channel/UCpDtOZmGitIVXytVrjJL7LQ" target="_blank"><span class="footer-youtube">y</span></a>
-             <a href="http://vimeo.com/georgiastate" target="_blank"><span class="footer-vimeo">V
-             </span></a>
-           </div>
-</div>
+   <!-- Beginning of footer -->
+        <div class="footer" id="footer">
+          <h2>
+            Contact Us at These Links
+          </h2>
+            <table>
+                <tr>
+                <ul style="list-style-type: none; display: inline-block;" class="leftAlign">
+                  <li><a href="">About</a></li>
+                  <ul>
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">Employment</a></li>
+                </ul>
+                </ul>
+                <ul style="list-style-type: none; display: inline-block;" class="leftAlign">
+                  <li><a href="">Connections</a></li>
+                  <ul>
+                  <li><a href="">Magazines</a></li>
+                  <li><a href="">Tickets</a></li>
+                </ul>
+                </ul>
+            </tr>
+                  <tr>
+                <ul>
+          <a href="#" class="white-text">
+            <i class="fab fa-facebook fa-4x"></i>
+          </a>
+          <a href="#" class="white-text">
+            <i class="fab fa-twitter fa-4x"></i>
+          </a>
+          <a href="#" class="white-text">
+            <i class="fab fa-linkedin fa-4x"></i>
+          </a>
+          <a href="#" class="white-text">
+            <i class="fab fa-google-plus fa-4x"></i>
+          </a>
+          <a href="#" class="white-text">
+            <i class="fab fa-github fa-4x"></i>
+          </a>
+    </ul>
       	<?php
 	//connect to server
             $link = mysql_connect("localhost", "tlloyd5", "tlloyd5")

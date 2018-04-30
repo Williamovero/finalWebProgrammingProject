@@ -1,83 +1,139 @@
-<?xml version = "1.0"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-
-<html xmlns = "http://www.w3.org/1999/xhtml">
+<html>
     <head>
         <title>User sign up</title>
-        <link rel="stylesheet" type="text/css" href="project2.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-	<div>
-		<ul class="navbar">
-	  	<li class="navbarlist"><a href="project2_1.php" class="active">Home</a></li>
-	  	<li class="navbarlist"><a href="createblog.php">Create Blog</a></li>
-	  	<div class="usermanagement">
-      <li><a href="userlogin.php">Login</a></li>      
-      <li><a href="usersignup.php">Sign Up</a></li>
-	<li><a href="http://codd.cs.gsu.edu/~tlloyd5/projects/mockupproject2/logout.php">Log Out</a></li>
-	</div>
-</ul>
-</div>
-<div name="maincontent" id="maincontent">
-        <h4 align="center" style="color: red;">Register</h4>
-        <form action="" method="post">
-        <table align="center">
-            <tr>
-                <td>First Name:</td>
-                <td><input type="given-name" name="firstname" required /></td>
-            </tr>
-            <tr>
-                <td>Last Name:</td>
-                <td><input type="family-name" name="lastname" required /></td>
-            </tr>
-            <tr>
-                <td>Email Address:</td>
-                <td><input type="email" name="email" required /></td>
-            </tr>
-            <tr>
-                <td>Username:</td>
-                <td><input type="username" name="username" required/></td>
-            </tr>
-            <tr>
-                <td>Password:</td>
-                <td><input type="password" name="password" required /></td>
-            </tr>
-            <tr>
-                <td>Access Type:</td>
-                <td>
-                    <input type = "radio" name = "radio1"
-                            value = "admin" id="accesstype1"/>Admin
-                    <input type = "radio" name = "radio1"
-                            value = "reguser" id="accesstype2" />User
+        <meta charset="UTF-8">
 
-                </td>
-            </tr>
-            <tr>
-                <td><input type="submit" name="submit" value="submit" /></td>
-            </tr>
-        </table>
-<div class="footer">
-  <h2>Join our blog</h2>
-	   <div class="footer-social">
-	     <a href="https://www.facebook.com/GeorgiaStateUniversity"  target="_blank"><span class="footer-facebook">F</span></a>
-	     <a href="https://twitter.com/georgiastateu" target="_blank"><span class="footer-twitter">T</span></a>
-	     <a href="https://www.linkedin.com/edu/georgia-state-university-18163" target="_blank"><span class="footer-linkedin">L</span></a>
-	     <a href="http://instagram.com/georgiastateuniversity" target="_blank"><span class="footer-instagram">I</span></a>
-	     <a href="https://www.flickr.com/photos/georgiastate" target="_blank"><span class="footer-flickr">fl</span></a>
-	     <a href="https://www.youtube.com/channel/UCpDtOZmGitIVXytVrjJL7LQ" target="_blank"><span class="footer-youtube">y</span></a>
-	     <a href="http://vimeo.com/georgiastate" target="_blank"><span class="footer-vimeo">V
-	     </span></a>
-	   </div> 
-</div>
+        <!-- Responsive Layout -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="images/initialUtilblog.png">
+       
+            <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/finalProject.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+               <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
+
+            <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    </head>
+    <body class="SignUpPage">
+<div class="SignUp">
+        
+              <ul class="switch-group">
+        <li class="switch active"><h4 align="center" style="color: #FE6250;"><a href="#signup"><strong>Register</strong></a></h4></li>
+        <li class="switch"><a href="#login">Log In</a></li>
+      </ul>
+        <form action="userlogin.php" method="post" id="register">
+                    <input type="given-name" name="firstname" placeholder="firstname" required autocomplete="off" /><br>
+                    <input type="family-name" name="lastname" placeholder="lastname" required autocomplete="off" /><br>
+                    <input type="name" name="email" placeholder="email" required autocomplete="off" /><br>
+                    <input type="name" name="username" placeholder="username" required autocomplete="off" /><br>
+                    <input type="name" name="password" placeholder="password" required autocomplete="off" /><br>
+
+                    <label>
+                    <input class="with-gap" name="radio1" type="radio" value = "admin" id="accesstype1" checked />
+                    <span>Admin</span>
+                    </label>
+                    
+                    <label>
+                    <input class="with-gap" name="radio1" type="radio" value = "reguser" id="accesstype2" />
+                    <span>User</span>
+                    </label>
+                    <br>
+
+                    <input type="submit" value="Submit" class="btn waves-effect indigo darken-3 waves-light">
         </form>
+
+
+
+        <div class="form">
+      
+      
+      <div class="tab-content">
+        <div id="signup">   
+          <h1>Sign Up for Free</h1>
+          
+          <form action="/" method="post">
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                First Name<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" />
+            </div>
+        
+            <div class="field-wrap">
+              <label>
+                Last Name<span class="req">*</span>
+              </label>
+              <input type="text"required autocomplete="off"/>
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Set A Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <button type="submit" class="button button-block"/>Get Started</button>
+          
+          </form>
+
+        </div>
+        
+        <div id="login">   
+          <h1>Welcome Back!</h1>
+          
+          <form action="/" method="post">
+          
+            <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <p class="forgot"><a href="#">Forgot Password?</a></p>
+          
+          <button class="button button-block"/>Log In</button>
+          
+          </form>
+
+        </div>
+        
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
         <?php
         // Create connection
-            $link = mysql_connect("localhost", "tlloyd5", "tlloyd5")
+            $link = mysql_connect("localhost", "root", "Over7070")
                 or die("cannot connect: " . mysql_error());
       
-        // connect to database
-            mysql_select_db("tlloyd5")
+        // Connect to database
+            mysql_select_db("finalproject")
                 or die("database not connected: ". mysql_error());
       
         $firstname = $_POST['firstname'];
@@ -95,7 +151,7 @@
                 echo "Username or email already exists";
                 echo '<a href= "userlogin.php"> Log in</a>';
             }
-	    else header('Location: http://codd.cs.gsu.edu/~tlloyd5/projects/mockupproject2/userlogin.php ');
+	    else header('Location: userlogin.php ');
 
         }
         $link->close();

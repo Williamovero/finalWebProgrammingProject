@@ -6,9 +6,22 @@
 <html>
 <head>
 	<title>Create Blog</title>
-		<link rel="stylesheet" type="text/css" href="project2.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
 
+        <!-- Responsive Layout -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+            <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="finalProject.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+       
+               <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
+
+            <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 </head>
 <body>
 <div>
